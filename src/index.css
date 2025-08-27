@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --color-sagerRed: #f9000e;
+  --color-sagerBlack: #0b0b0b;
+  --color-sagerGray-100: #111111;
+  --color-sagerGray-70: #272727;
+  --color-sagerGray-50: #65717c;
+  --color-sagerWhite: #ffffff;
+  --color-sagerBlue: #748aa1;
+  --color-sagerGreen: #5cfc00;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

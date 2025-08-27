@@ -1,15 +1,22 @@
-import React from 'react'
+import SideBarTab from "../../ui/sideBarTab/SideBarTab";
+import Line from "../../ui/line/Line";
+import MapSVG from "../../svg/MapSVG";
+import DashboardSVG from "../../svg/DashboardSVG";
 
 function SideBar() {
   return (
-    <aside className="bg-yellow-400 row-span-1 col-span-1 flex flex-col items-center p-4">
-      <nav className="space-y-4">
-        <a href="#" className="block">Home</a>
-        <a href="#" className="block">About</a>
-        <a href="#" className="block">Contact</a>
-      </nav>
+    <aside className="bg-sagerGray-100 row-span-1 col-span-1 flex flex-col justify-stretch pt-15">
+      <SideBarTab destination={"/dashboard"} tabName={"Dashboard"}>
+        <DashboardSVG color={"#65717c"} />
+      </SideBarTab>
+
+      <Line width={15} height={0.5} rotation={0} />
+
+      <SideBarTab destination={"/"} tabName={"MAP"}>
+        <MapSVG color={"#65717c"} />
+      </SideBarTab>
     </aside>
-  )
+  );
 }
 
-export default SideBar
+export default SideBar;
