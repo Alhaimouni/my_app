@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router";
+import Mapbox from "./components/mapbox/Mapbox";
 import MainLayout from "./components/layout/mainLayout/MainLayout";
 
 const router = createBrowserRouter([
@@ -8,7 +9,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <p className="flex justify-center items-center">mvp</p>,
+        element: <p>sdsad</p>,
       },
       {
         path: "dashboard",
